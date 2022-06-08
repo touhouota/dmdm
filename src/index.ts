@@ -13,5 +13,11 @@ global.test = () => {
         }
     ]
     let spreadsheet = new Spreadsheet(url, sheetDict);
-    spreadsheet.getSheet();
+    let log = spreadsheet.getSheetByType("log");
+    let request = log.getRequest();
+
+    let master = spreadsheet.getSheetByType("master");
+    let status = master.getStatusByManageNumber(request[3]);
+    master.updateStatus(request[2], request[3]);
+
 }

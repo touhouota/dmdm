@@ -49,3 +49,14 @@
     * スプシに送って記録・更新
       * 情報更新
       * データ整理
+
+## Docker
+WSL2から大半の場合に`clasp push`できないことが多いので、環境を別にしてみるテスト。
+
+参考: https://qiita.com/rei-ta/items/61b3fde6a069b77d335d
+
+* host
+  * `docker-compose run --rm -u $(id -u $usr) clasp /bin/bash`
+* docker
+  * `clasp login --no-localhost`
+  * `clasp push --watch`
