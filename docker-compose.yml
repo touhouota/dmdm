@@ -6,4 +6,4 @@ services:
     stdin_open: true
     volumes:
       - "/home/:/usr/src"
-    working_dir: /usr/src
+    working_dir: /usr/src/${user}

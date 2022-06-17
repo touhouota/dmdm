@@ -3,8 +3,17 @@
       "allowSyntheticDefaultImports": true,
       "noImplicitAny": false,
       "module": "es6",
+      "moduleResolution": "node",
       "target": "es5",
-      "allowJs": true
+      "allowJs": true,
+      "baseUrl": "./src",
+      "rootDir": ".",
+      "paths": {
+        "*": [
+          "../node_modules/@types/*",
+          "./@types/*"
+        ],
+      }
     },
     "files": ["./src/@types/index.d.ts", "./src/index.ts"]
   }

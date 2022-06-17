@@ -27,17 +27,17 @@ const config = {
         test: /.tsx?$/,
         include: [
           path.resolve(__dirname, "src")
-      ],
-      exclude: [
-          path.resolve(__dirname, "node_modules"),
-          path.resolve(__dirname, ".yarn")
-      ],
-      use: {
-        loader: "ts-loader",
-        options: {
-          configFile: "tsconfig.json"
+        ],
+        exclude: [
+            path.resolve(__dirname, "node_modules"),
+            path.resolve(__dirname, ".yarn")
+        ],
+        use: {
+          loader: "ts-loader",
+          options: {
+            configFile: "tsconfig.json"
+          }
         }
-      }
       },
 
       // Add your rules for custom modules here
