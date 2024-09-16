@@ -1,0 +1,27 @@
+{
+  "name": "dmdm",
+  "version": "0.0.1",
+  "repository": "git@github.com:touhouota/dmdm.git",
+  "author": "touhouota <touhouota.register@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@google/clasp": "^2.4.1",
+    "@types/google-apps-script": "^1.0.47",
+    "@types/jest": "^28.1.1",
+    "gas-webpack-plugin": "^2.2.1",
+    "jest": "^28.1.1",
+    "prettier": "2.6.2",
+    "ts-jest": "^28.0.4",
+    "ts-loader": "^9.3.0",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.6.4",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "scripts": {
+    "clasp:push": "clasp push",
+    "webpack": "webpack --watch --progress",
+    "webpack:build": "webpack --mode production",
+    "test": "jest"
+  }
+}

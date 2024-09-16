@@ -1,0 +1,9 @@
+version: "3"
+services:
+  clasp:
+    build: .
+    tty: true
+    stdin_open: true
+    volumes:
+      - "/home/:/usr/src"
+    working_dir: /usr/src/${user}
